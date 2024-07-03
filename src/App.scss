@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Lucida Console";
+  src: url("/fonts/lucon.ttf");
+}
+#os_wrapper {
+  font-family: "Lucida Console";
+  height: 26vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmin;
+  box-sizing: border-box !important;
+  .os {
+    height: 100%;
+    width: 22vmin;
+    transition: .35s;
+    &:hover {
+      transform: scale(125%);
+    }
+    // background: #fff;
+    padding: 2vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    span {
+      height: 100%;
+      aspect-ratio: 1 / 1;
+    }
+    .hdd_icon {
+      height: 80%;
+      aspect-ratio: 1 / 1;
+      // background: #000;
+      background-size: contain;
+      object-fit: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("/hdd.png");
+    }
+    h1 {
+      height: 20%;
+      color: #fff;
+      font-size: 2.6vmin;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+#glitched {
+  height: 100% !important;
+}
+#b98txt{
+  color: darkred !important;
+}
