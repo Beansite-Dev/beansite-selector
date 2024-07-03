@@ -38,6 +38,7 @@ const App=()=>{
     </div>)
   }
   return (<>
+    <h1 id="title">Select your OS</h1>
     <div id="os_wrapper">
       <OS id="b95" title="Beansite 95" url="https://mb95.vercel.app"/>
       <OS id="b98" title="Beansite 98 (preview)" url="https://b98-preview.vercel.app" glitch={true}/>
