@@ -28,7 +28,7 @@ const App=()=>{
         }else{window.location.href=props.url;}
       });
     },[]);
-    return(<div className="os" id={props.id}>
+    return(<div className={`os${props.new?" new":""}`} id={props.id}>
       {!props.glitch?
         <div className='hdd_icon'></div>:
         <span>
@@ -41,8 +41,8 @@ const App=()=>{
     <h1 id="title">Select your OS</h1>
     <div id="os_wrapper">
       <OS id="b95" title="Beansite 95" url="https://mb95.vercel.app"/>
-      <OS id="b98" title="Beansite 98 (preview)" url="https://b98-preview.vercel.app" glitch={true}/>
-      <OS id="bxp" title="Beansite XP" url="https://mbxp.vercel.app"/>
+      <OS id="b98" title="Beansite 98 (preview)" url="https://b98-preview.vercel.app" glitch/>
+      <OS id="bxp" title="Beansite XP (new!)" url="https://mbxp.vercel.app" new/>
     </div>
   </>)
 }

@@ -12,9 +12,11 @@
   box-sizing: border-box !important;
 }
 #os_wrapper .os {
+  filter: drop-shadow(0 0 1vmin rgba(255, 255, 255, 0.35)) drop-shadow(0 0 5vmin rgba(255, 255, 255, 0.35)) drop-shadow(0 0 10vmin rgba(255, 255, 255, 0.25));
   height: 100%;
   width: 22vmin;
   transition: 0.35s;
+  opacity: 0.65;
   padding: 2vmin;
   display: flex;
   justify-content: center;
@@ -22,7 +24,8 @@
   flex-direction: column;
 }
 #os_wrapper .os:hover {
-  transform: scale(125%);
+  transform: scale(115%);
+  opacity: 1;
 }
 #os_wrapper .os span {
   height: 100%;
@@ -54,4 +57,15 @@
 
 #b98txt {
   color: darkred !important;
+  filter: drop-shadow(0 0 1vmin red) drop-shadow(0 0 1vmin rgba(255, 100, 100, 0.5));
+}
+
+.new {
+  transform: scale(115%);
+  opacity: 0.85 !important;
+  filter: drop-shadow(0 0 0.5vmin rgb(255, 255, 255)) drop-shadow(0 0 2vmin rgba(255, 255, 0, 0.65)) drop-shadow(0 0 3vmin rgb(255, 165, 1)) drop-shadow(0 0 5vmin rgb(255, 125, 0)) !important;
+}
+.new:hover {
+  transform: scale(125%) !important;
+  opacity: 1 !important;
 }/*# sourceMappingURL=App.css.map */
